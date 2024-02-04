@@ -139,13 +139,14 @@ cursor: pointer;
 
 
 }
-.switch-controller-Annually:checked ~ .switch-controller .switch-controller-Monthly
- {
+.switch-controller-annually:checked ~ .switch-controller .switch-controller-monthly{
   z-index: 5;
 }
-.switch-controller-Monthly:checked ~ .switch-controller .switch-controller-Annually
- {
+.switch-controller-monthly:checked ~ .switch-controller .switch-controller-annually{
   z-index: 5;
+}
+.switch-controller-monthly:checked ~ .switch-controller .switch-circle {
+margin-left: 24px;
 }
 .switch-circle{
 width: 24px;
@@ -155,8 +156,8 @@ background-color: #fff;
 
 
 }
-.switch-controller-Annually,
-.switch-controller-Monthly{
+.switch-controller-annually,
+.switch-controller-monthly{
   position: absolute;
  top: 0;
   left: 0;
@@ -164,12 +165,12 @@ background-color: #fff;
   height: 100%;
 }
 
-.switch-input-Annually:checked ~ .switch-controller .switch-controller-Monthly{
+/* .switch-input-annually:checked ~ .switch-controller .switch-controller-Monthly{
 transform: translateY(-10px);
 }
-.switch-input-Monthly:checked ~ .switch-controller .switch-controller-Annually{
+.switch-input-monthly:checked ~ .switch-controller .switch-controller-Annually{
   transform: translateY(-10px);
-  }
+  } */
 
 .switch-label{
 font-size: 15px;
